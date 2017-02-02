@@ -1,0 +1,15 @@
+1.  It is a page that says "It worked! Congratulations on your first Django-powered page. ...".
+
+2. When you navigate to root it gives a 404. When you navigate to polls it gives a page that says "Hello, world. You're at the polls index.".
+
+3.  Django migration is a way of propoagating changes you make to your models into your database schema. It is need to automate handling of the setup of the database.
+
+4. When you log into the admin site, you see a way to create groups and users, as well as custom fields that were created and added to the admin site for setting up. To add custom fields to the admin site, you modify your admin.py file in your app with the importing of your custom fields from your model and then code for registering them. Then run your server and go to the admin site and they should be there.
+
+5. When you go to /polls/38/ you get a page that says "You're looking at question 38.". When you go to /polls/38/results/ you get a page that says "You're looking at the results of question 38.". When you go to /polls/38/vote/ you get a page that says "You're voting on question 38.". You get a 404 Page not found if you try to use alphabet characters instead of a number. To allow it to use alphabet characters you would need to modify each of the urlpatterns' regex in your apps url.py to include [a-b]+.
+
+6. It is bad to hardcode the urls because if you restructure or rename anything your code will break.
+
+7. The benefit of Django generic views is that it takes a way the monotonous of repeating the same patterns over and over again of the view level. It allows for quick write of common views of data without having to write too much code. When you struggling to implement your view as a subclass of a generic view, then it would be more effective to write your own. Otherwise if its using a lot of the same patterns use the generic view or subclass of it.
+
+8. Unit testing our code catches errors that we could miss and cases for methods that we may miss.
