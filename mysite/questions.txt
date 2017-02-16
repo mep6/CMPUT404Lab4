@@ -1,3 +1,4 @@
+Lab 4
 1.  It is a page that says "It worked! Congratulations on your first Django-powered page. ...".
 
 2. When you navigate to root it gives a 404. When you navigate to polls it gives a page that says "Hello, world. You're at the polls index.".
@@ -13,3 +14,19 @@
 7. The benefit of Django generic views is that it takes a way the monotonous of repeating the same patterns over and over again of the view level. It allows for quick write of common views of data without having to write too much code. When you struggling to implement your view as a subclass of a generic view, then it would be more effective to write your own. Otherwise if its using a lot of the same patterns use the generic view or subclass of it.
 
 8. Unit testing our code catches errors that we could miss and cases for methods that we may miss.
+
+
+Lab 6
+1. pip freeze outputs installed packages in requirements format. Heroku reads this file and installs the appropriate Python dependencies.
+
+2. Heroku provides a environment variable for the database through $DATABASE_URL. So are site will configure the database based through our setting.py file in our sites folder.
+
+3. Heroku talks to our site through Gunicorn. Gunicorn is going to run the WSGI module to send requests to the site through Django. If pages are static gunicorn will request them through whitenoise and whitenoise will send them up through django.
+
+4. Procfile is used to explicitly declare your application's process types and entry points.
+
+5. To run it locally heroku local web. heroku local command examines the Procfile to determine what to run. To deploy the app to Heroku commit your changes to git, then heroku create and push to heroku master. Open the app in the browser by heroku open.
+
+6. Use heroku run python manage.py [command].
+
+7. 
