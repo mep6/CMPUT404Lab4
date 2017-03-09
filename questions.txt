@@ -29,4 +29,4 @@ Lab 6
 
 6. Use heroku run python manage.py [command].
 
-7. 
+7. https://boiling-escarpment-51404.herokuapp.com/polls/
